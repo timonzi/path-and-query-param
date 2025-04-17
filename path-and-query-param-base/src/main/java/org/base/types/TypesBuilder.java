@@ -8,8 +8,7 @@ public class TypesBuilder {
 
 
     public static StringType newStringType(final String value) {
-//        return new StringType(value);
-        return StringType.fromString(value);
+        return new StringType(value);
     }
 
 }
