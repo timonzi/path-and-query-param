@@ -8,7 +8,7 @@
 
 ## Steps to reproduce the problem
 
-* Build the projects via the parent / top level POM(`mvn clean install`)
+* Build the projects via the parent / top level POM (`mvn clean install`)
     * All tests are working
 * Delete the top level POM or comment out the modules
 * Build projects (`mvn clean install`)
