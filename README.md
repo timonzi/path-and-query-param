@@ -2,19 +2,18 @@
 
 ## Problem
 
-* There is an own type `StringType` which contains a `String` property (`value`)
-    * Project: `path-and-query-param-base`
-    * Has <b>protected</b> constructors
-    * Has a `fromString` method
-* For a REST call (see `path-and-query-param-usage`) the `fromString` method is not used, but the constructor
-* The call fails, because the constructor is `protected`
+* Quarkus behaves differently when having a parent POM
+* Original problem: See `main` branch (`README.md`)
+* The problem is not reproducible when having the parent POM
 
 ## Steps to reproduce the problem
 
+* Build the projects via the parent / top level POM(`mvn clean install`)
+    * All tests are working
+* Delete the top level POM or comment out the modules
 * Build `path-and-query-param-base` (`mvn clean install`)
 * Build `path-and-query-param-usage` (`mvn clean install`)
-
-Hint: The problem is not reproducible, when you add a maven reactor on top level (with the two projects as module).
+    * The tests will fail
 
 ### The error
 
