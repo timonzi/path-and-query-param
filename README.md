@@ -11,10 +11,8 @@
 * Build the projects via the parent / top level POM (`mvn clean install`)
     * All tests are working
 * Delete the top level POM or comment out the modules
-* Build projects (`mvn clean install`)
-    * `path-and-query-param-base`
-    * `path-and-query-param-usage`
-        * The tests will fail
+* Build project `path-and-query-param-usage` (`mvn clean install`)
+  * The tests will fail
 
 ### The error
 
