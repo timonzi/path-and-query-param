@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @QuarkusTest
-class GreetingsResourceTest {
+class ParametersResourceTest {
 
     private static final String SOME_VALUE = "someValue";
 
